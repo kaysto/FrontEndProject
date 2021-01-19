@@ -28,7 +28,7 @@ $('#searchButton').click(function(e){
                                <p class="card-text">Amount of episodes:${value.episodes}</p>
                                <p class="card-text">Score:${value.score}</p>
                                <p class="card-text">Synopsis:${value.synopsis}</p>
-                               <button type='button' onclick='goToReview()'class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">See Reviews</button>
+                               <button type='button' onclick='goToReview()'class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">See Reviews</button>
                            </div>
                        </div>
                    </div>
@@ -59,12 +59,11 @@ $('#searchButton').click(function(e){
                 $.each(naruto,function(index,value){
                     console.log(value.content);
                    
-                   popUpBody = 
-                   `<p class='popUp>${value.content}</p>`;
+                   
             
-
+                   $('.modal-body').html(value.content);
                 })
-                 $('.modal-body').append(popUpBody);
+                 
             }
             
         })
