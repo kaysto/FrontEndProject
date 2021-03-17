@@ -79,26 +79,27 @@ body{
    #animeResults {
      margin:5px;
    }
+
+  
   
     .card-wrapper {
       margin-bottom: 30px;
+      max-height: 500px;
     }
     .card-image .card .card-img-wrapper {
       height: 100%;
     }
     .card-image .card .card-body {
       display: none;
+      
     }
     .card-image-title-description .card .card-img-wrapper {
       max-height: 160px;
     }
     .card-image-title-description .card {
-      position: relative;
-      min-height: 300px;
+      height: 160px;
     }
     .card-image-title-description .card .card-body {
-      height: auto;
-      position: relative;
       top: 0;
       margin-bottom: -50px;
     }
@@ -112,7 +113,6 @@ body{
       display: inline-block;
       position: relative;
       overflow: hidden;
-      min-height: 250px;
       height: 100%;
     }
     .card:hover {
